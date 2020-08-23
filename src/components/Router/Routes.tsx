@@ -1,6 +1,7 @@
 import {Landing} from '../Landing/Landing';
 import {Meeting} from '../Meeting/Meeting';
 import {Help} from '../Help/Help';
+import {Host} from '../Host/Host';
 import {Account} from '../Account/Account';
 import React from 'react';
 import {Switch, BrowserRouter as Router, Route} from 'react-router-dom';
@@ -20,6 +21,9 @@ export const Routes = ()=>{
                 </Route>
                 <Route path="/help">
                     <Help />
+                </Route>
+                <Route path="/host">
+                    <Host />
                 </Route>
             </Switch>
         </Router>
